@@ -37,7 +37,7 @@
         var leftPressed = false;
         var leftPressed = false;
         var mojiExists = new Array(true, true, true);
-        var mojiList = ['‚ ', '‚¢', '‚¤'];
+        var mojiList = ['ã‚', 'ã„', 'ã†'];
         var mojiCoordinates = [[0, 0], [0, 0], [0, 0]];
         var mojiAngle = [0, 0, 0];
         var mojiAdjacent = [false, false, false];
@@ -273,7 +273,7 @@
                     ctx.drawImage(point, horizontalLowerRight[0], horizontalLowerRight[1]);
 
 
-                    //Ú‚·‚é‚©ƒ`ƒFƒbƒN
+                    //æ¥ã™ã‚‹ã‹ãƒã‚§ãƒƒã‚¯
                     if (approachVartex(upperLeft) || approachVartex(upperRight) || approachVartex(lowerLeft) || approachVartex(lowerRight) || approachEdge(mojiCoordinates[i][0], mojiCoordinates[i][1], machineX, machineY, mojiAngle[i])) {
 
                         mojiAdjacent[i] = true;
@@ -319,7 +319,7 @@
 
         }
 
-        function approachEdge(v, w, x, y, z) { // v •¶š’†SX w •¶š’†SY x ’†SX y ’†SY z Šp“x
+        function approachEdge(v, w, x, y, z) { // v æ–‡å­—ä¸­å¿ƒX w æ–‡å­—ä¸­å¿ƒY x ä¸­å¿ƒX y ä¸­å¿ƒY z è§’åº¦
 
             var relativePosition = [x - v, y - w];
 
